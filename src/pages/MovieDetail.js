@@ -15,7 +15,7 @@ export const MovieDetail = () => {
       console.log(json);
     }
     fetchMovieDetail();
-  },[] )
+  },[params.id] )
   
   useEffect(() => {
     document.title = `${movie.title} / Cinematic World`;
